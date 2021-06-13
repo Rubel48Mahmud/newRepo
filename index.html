@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Check Your Result</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<style type="text/css">
+*{margin:0;
+padding:0;
+box-sizing:border-box}
+body{
+background:silver
+}
+
+.container{
+width:350px;
+height:320px;
+background:#fff;
+margin:10px auto;
+padding-top:5px
+}
+
+.container .header{
+width:95%;
+height:64px;
+background:#F8F8FF;
+margin:0 auto;
+display:flex
+}
+
+.container .header .logo-div{
+width:80px;
+padding:5px
+}
+.container .header .logo-div img{
+width:55px
+}
+
+.container .header .banner-div{
+width:252px;
+background:green;
+}
+
+.container .banner-div .banner{
+height:22px;
+background:url('background.png');
+background-size:cover;
+padding:5px;
+color:#7FFF00
+}
+
+.container .banner-div .header-text{
+height:27px;
+background:green;
+padding:5px;
+text-shadow:1px 1px 3px red;
+font-size:15px;
+word-spacing: -1px;
+font-family: 'Playfair Display', serif;
+font-weight:bold;
+color:#fff
+}
+
+.container .banner-div .text{
+height:15px;
+background:#006400;
+text-align:right;
+padding:4px;
+font-size:8px;
+color:#fff
+}
+
+.container .main-content{
+height:180px;
+width:295px;
+border:2px solid #F5F5F5;
+margin:15px auto;
+padding:5px;
+}
+
+.container .main-content .bold{font-weight:bold}
+
+.container .main-content select{width:170px;
+outline:none;
+color:red;
+border-radius:4px;
+border:1px solid gray;
+background:#FFF5EE}
+.container .main-content select:hover{
+border:2px solid blue;
+box-shadow:1px 1px 2px yellow ,-1px -1px 2px yellow
+}
+.container .main-content input{width:170px;
+border-radius:4px;
+border:1px solid gray;
+background:#FFF5EE}
+/*button design*/
+.button-div{
+text-align:right;
+padding:5px
+
+}
+.button-div .button{
+width:60px;
+padding:2px;
+font-weight:bold;
+font-size:15px;
+border-radius:2px;
+outline:none;
+}
+.red{
+background:red;
+border:1px solid blue;
+color:#fff
+}
+.green{
+background:green;
+border:1px solid blue;
+color:#fff
+}
+.red:active{
+background:rgba(0,0,0,0.5);
+text-shadow:1px 1px 3px red
+}
+.green:active{
+background:rgba(0,0,0,0.5);
+text-shadow:1px 1px 3px white
+}
+
+
+.footer-div{width:95%;
+height:40px;
+margin:0 auto;
+border-top:2px solid green;
+background:#F8F8FF;
+display:flex;
+}
+
+.footer-div .footer-text{
+width:60%;
+padding:8px
+}
+.footer-div .footer-text a{
+text-decoration:none;
+color:red;
+}
+.footer-div .footer-logo{
+width:30%;
+text-align:right;
+padding:4px
+}
+
+
+.result-div{
+width:350px;
+height:140px;
+background:#FFFAFA;
+margin:0 auto;
+padding:5px;
+
+}
+.result-div .bold2{font-weight:bold;
+color:#FF00FF}
+</style>
+</head>
+<body>
+
+ <div class="container">
+ 
+  <div class="header">
+  
+    <div class="logo-div">
+     <img src="logo.jpg">
+    </div>
+    
+    <div class="banner-div">
+      <div class="banner">
+       <h5>Ministry of Education</h5>
+      </div>
+      <div class="header-text">
+       <p>Saikat Government College.</p>
+      </div>
+      <div class="text">
+      <marquee scrollamount="3"> <p>সৈকত সরকারি কলেজের সব ধরনের রেজাল্ট জানতে নিচের তথ্যগুলো পূরণ করে সাবমিট করুন৷**  ধন্যবাদ৷</p></marquee>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="main-content">
+   <table>
+     <tr>
+     <td class="bold">Class</td>
+     <td>:</td>
+     <td>
+     <select id="classs">
+     <option>Select One</option>
+     <option>Inter 1st year</option>
+     <option>Inter 2nd year</option>
+     <option>Honours 1st year</option>
+     <option>Honours 2nd year</option>
+     <option>Honours 3rd year</option>
+     <option>Honours 4th year</option>
+     <option>Degree 1st year</option>
+     <option>Degree 2nd year</option>
+     <option>Degree 3rd year</option>
+     </select>
+     </td>
+     </tr>
+     
+     <tr>
+       <td class="bold">Group</td>
+       <td>:</td>
+       <td>
+        <select id="group">
+        <option>Select One</option>
+        <option>Science</option>
+        <option>Humanities</option>
+        <option>Commerce</option>
+        <option>BM</option>
+        </select>
+       </td>
+     </tr>
+   
+     <tr>
+       <td class="bold">Examination</td>
+       <td>:</td>
+       <td>
+       <select id="exam">
+        <option>Evaluation test</option>
+        <option>Pre-Test Exam</option>
+        <option>Half-Yearly Exam</option>
+        <option>Annual Exam</option>
+       </select>
+       </td>
+     </tr>
+     
+     <tr>
+     <td class="bold">Year</td>
+     <td>:</td>
+     <td>
+     <select id="year">
+     <option>Select One</option>
+     <option>2020</option>
+     <option>2019</option>
+     <option>2018</option>
+     <option>2017</option>
+     <option>2016</option>
+     <option>2015</option>
+     <option>2014</option>
+     <option>2013</option>
+     <option>2012</option>
+     <option>2011</option>
+     <option>2010</option>
+     <option>2009</option>
+     <option>2008</option>
+     <option>2007</option>
+     <option>2006</option>
+     <option>2005</option>
+     <option>2004</option>
+     <option>2003</option>
+     <option>2002</option>
+     <option>2001</option>
+     <option>2000</option>
+     <option>1999</option>
+     <option>1998</option>
+     <option>1997</option>
+     <option>1996</option>
+     </select>
+     </td>
+     </tr>
+     
+     <tr>
+     <td class="bold">Roll</td>
+     <td>:</td>
+     <td><input type="number" id="roll"></td>
+     </tr>
+     
+     <tr>
+     <td class="bold">Reg:No</td>
+     <td>:</td>
+     <td><input type="number" id="regi"></td>
+     </tr>
+   </table>
+   <div class="button-div">
+   <button class="button red" onclick="resetBtn()">Reset</button>
+   <button class="button green" onclick="submitBtn()">Submit</button>
+   </div>
+  </div>
+  
+  <div class="footer-div">
+   <div class="footer-text">
+    <small>©copyright <i><a href="https://www.facebook.com/Rubel48Mahmud" >Rubel Mahmud</a></i></small>
+   </div>
+   <div class="footer-logo">
+    <img src="tbl_logo.png" width="60px">
+   </div>
+  </div>
+ </div>
+
+ <div class="result-div">
+   <table>
+    <tr>
+     <td id="name" class="bold2"><b id="name"></b></td>
+     <td id="colon1" class="bold2"><b id="colon1"></b></td>
+     <td id="names"></td>
+  
+    </tr>
+    
+    <tr>
+    <td id="fname" class="bold2"><b></b></td>
+    <td id="colon2" class="bold2"><b></b></td>
+    <td id="fnames"></td>
+    </tr>
+    
+    <tr>
+    <td id="mname" class="bold2"><b></b></td>
+    <td id="colon3" class="bold2"><b></b></td>
+    <td id="mnames"></td>
+    </tr>
+    
+    <tr>
+    <td id="rollNo" class="bold2"><b></b></td>
+    <td id="colon4" class="bold2"><b></b></td>
+    <td id="rollNos"></td>
+    </tr>
+    
+    <tr>
+    <td id="regiNo" class="bold2"><b></b></td>
+    <td id="colon5" class="bold2"><b></b></td>
+    <td id="regiNos"></td>
+    </tr>
+    
+    <tr>
+    <td id="gpa" class="bold2"><b></b></td>
+    <td id="colon6" class="bold2"><b></b></td>
+    <td id="gpas"></td>
+    </tr>
+   </table>
+ </div>
+ 
+ <script type="text/javascript">
+//function1:- fill input field to get result,
+ function submitBtn(){
+ var classs = document.getElementById('classs').value;
+ var group = document.getElementById('group').value;
+ var exam = document.getElementById('exam').value;
+ var year = document.getElementById('year').value;
+ var roll = document.getElementById('roll').value;
+ var regi = document.getElementById('regi').value;
+ var name = document.getElementById('name');
+ var colon1 = document.getElementById('colon1');
+ var names = document.getElementById('names');
+ var fname = document.getElementById('fname');
+ var colon2 = document.getElementById('colon2');
+ var fnames = document.getElementById('fnames');
+ var mname = document.getElementById('mname');
+ var colon3 = document.getElementById('colon3');
+ var mnames = document.getElementById('mnames');
+ var rollNo = document.getElementById('rollNo');
+ var colon4 = document.getElementById('colon4');
+ var rollNos = document.getElementById('rollNos');
+ var regiNo = document.getElementById('regiNo');
+ var colon5 = document.getElementById('colon5');
+ var regiNos = document.getElementById('regiNos');
+ var gpa = document.getElementById('gpa');
+ var colon6 = document.getElementById('colon6');
+ var gpas = document.getElementById('gpas');
+ 
+ var allTrue =(classs=="Inter 2nd year") && (group=="Science") && (exam=="Half-Yearly Exam")&&(year==2020)&&(roll==153)&&(regi==1611348201);
+ var allTrue2 =(classs=="Inter 2nd year") && (group=="Science") && (exam=="Half-Yearly Exam")&&(year==2020)&&(roll==154)&&(regi==1611348202);
+ //Steps to check the condition,
+
+ if(allTrue==true){
+ name.innerHTML="Name";
+ colon1.innerHTML=":";
+ names.innerHTML="Rubel Mahmud";
+ mname.innerHTML="Mother's Name";
+ colon2.innerHTML=":";
+ mnames.innerHTML="Jahanara Begum";
+ fname.innerHTML="Father's Name";
+ colon3.innerHTML=":";
+ fnames.innerHTML="Abdur Rahim";
+ rollNo.innerHTML="Roll";
+ colon4.innerHTML=":";
+ rollNos.innerHTML=roll;
+ regiNo.innerHTML="Regi";
+ colon5.innerHTML=":";
+ regiNos.innerHTML=regi;
+ gpa.innerHTML="GPA";
+ colon6.innerHTML=":";
+ gpas.innerHTML="4.30";
+
+ }
+ if(allTrue2==true){
+ name.innerHTML="Name";
+ colon1.innerHTML=":";
+ names.innerHTML="Rashed Mahmud";
+ mname.innerHTML="Mother's Name";
+ colon2.innerHTML=":";
+ mnames.innerHTML="Amena Begum";
+ fname.innerHTML="Father's Name";
+ colon3.innerHTML=":";
+ fnames.innerHTML="Ahshan Ullah";
+ rollNo.innerHTML="Roll";
+ colon4.innerHTML=":";
+ rollNos.innerHTML=roll;
+ regiNo.innerHTML="Regi";
+ colon5.innerHTML=":";
+ regiNos.innerHTML=regi;
+ gpa.innerHTML="GPA";
+ colon6.innerHTML=":";
+ gpas.innerHTML="4.78";
+ }
+ 
+ }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+// function2:- reset input data and output data,
+ function resetBtn(){
+ var classs = document.getElementById('classs').value;
+ var group = document.getElementById('group').value;
+ var exam = document.getElementById('exam').value;
+ var year = document.getElementById('year').value;
+ var roll = document.getElementById('roll').value;
+ var regi = document.getElementById('regi').value;
+ var name = document.getElementById('name');
+ var colon1 = document.getElementById('colon1');
+ var names = document.getElementById('names');
+ var fname = document.getElementById('fname');
+ var colon2 = document.getElementById('colon2');
+ var fnames = document.getElementById('fnames');
+ var mname = document.getElementById('mname');
+ var colon3 = document.getElementById('colon3');
+ var mnames = document.getElementById('mnames');
+ var rollNo = document.getElementById('rollNo');
+ var colon4 = document.getElementById('colon4');
+ var rollNos = document.getElementById('rollNos');
+ var regiNo = document.getElementById('regiNo');
+ var colon5 = document.getElementById('colon5');
+ var regiNos = document.getElementById('regiNos');
+ var gpa = document.getElementById('gpa');
+ var colon6 = document.getElementById('colon6');
+ var gpas = document.getElementById('gpas');
+ 
+ 
+ roll.value="";
+ regi.value="";
+ name.innerHTML="";
+ colon1.innerHTML="";
+ names.innerHTML="";
+ mname.innerHTML="";
+ colon2.innerHTML="";
+ mnames.innerHTML="";
+ fname.innerHTML="";
+ colon3.innerHTML="";
+ fnames.innerHTML="";
+ rollNo.innerHTML="";
+ colon4.innerHTML="";
+ rollNos.innerHTML="";
+ regiNo.innerHTML="";
+ colon5.innerHTML="";
+ regiNos.innerHTML="";
+ gpa.innerHTML="";
+ colon6.innerHTML="";
+ gpas.innerHTML="";
+ }
+ </script>
+</body>
+</html>
